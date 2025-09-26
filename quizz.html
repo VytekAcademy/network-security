@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="tooplate-stellaris-style.css" rel="stylesheet">
+    
+<!--
+
+Tooplate 2140 Stellaris Research
+
+https://www.tooplate.com/view/2140-stellaris-research
+
+Free HTML CSS Template
+
+-->
+<style>
+h2 {
+      color: #fbfbfb;
+      margin-bottom: 20px;
+    }
+    .question {
+      color: #f9f5f5;
+      margin-bottom: 20px;
+    }
+    .question p {
+      color: #cbc1c1;
+      font-weight: 600;
+    }
+    label {
+      display: block;
+      margin: 5px 0;
+      cursor: pointer;
+    }
+    button {
+      background: #e4450b;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #a83d08;
+    }
+    .success {
+      color: green;
+      margin-top: 20px;
+      font-weight: 600;
+    }
+</style>
+</head>
+<body>
+    <canvas id="starfield"></canvas>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo-container">
+                <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Cosmic logo with planet and orbit -->
+                    <circle cx="50" cy="50" r="35" fill="none" stroke="#8b5cf6" stroke-width="1.5" opacity="0.6"/>
+                    <circle cx="50" cy="50" r="20" fill="none" stroke="#f59e0b" stroke-width="2"/>
+                    <circle cx="50" cy="50" r="12" fill="#7c3aed"/>
+                    
+                    <!-- Orbiting elements -->
+                    <circle cx="85" cy="50" r="4" fill="#f59e0b">
+                        <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 50 50" to="360 50 50" dur="8s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle cx="15" cy="50" r="3" fill="#ec4899">
+                        <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 50 50" to="-360 50 50" dur="12s" repeatCount="indefinite"/>
+                    </circle>
+                    
+                    <!-- Central glow -->
+                    <circle cx="50" cy="50" r="8" fill="#f59e0b" opacity="0.3"/>
+                </svg>
+                <span class="logo-text">VYTEK ACADEMY</span>
+            </a>
+            
+            <div class="mobile-menu-toggle" id="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+                    <li><a href="quizz.html">TEST YOUR SKILL</a></li>
+                  
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+    <!-- Star layers -->
+    <div class="stars-layer"></div>
+    
+    <!-- Floating space orbs -->
+    <div class="space-orb"></div>
+    <div class="space-orb"></div>
+    <div class="space-orb"></div>
+    <div class="space-orb"></div>
+    
+    <!-- Shooting stars -->
+    <div class="shooting-star" style="--delay: 0s; --top: 10%; --left: 10%;"></div>
+    <div class="shooting-star" style="--delay: 1.5s; --top: 30%; --left: 60%;"></div>
+    <div class="shooting-star" style="--delay: 3s; --top: 20%; --left: 80%;"></div>
+    <div class="shooting-star" style="--delay: 4.5s; --top: 60%; --left: 30%;"></div>
+    <div class="shooting-star" style="--delay: 6s; --top: 80%; --left: 70%;"></div>
+    
+        <div class="hero-content">
+            <h1 class="cosmic-title">test your skills here</h1>
+            <p class="subtitle"></p>
+        </div>
+        <a href="#courses" class="scroll-btn">
+            <div class="scroll-btn-inner">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+                </svg>
+            </div>
+        </a>
+    </section>
+
+    
+
+
+    <section id="missions" class="missions-section fade-in">
+        <div class="missions-container">
+            <h2 class="section-title">Test Your Knowledge</h2>
+            
+            <div class="mission-tabs">
+                <button class="mission-tab active" data-tab="dm">30 Days Digital Marketing Bootcamp</button>
+                
+            </div>
+            
+        <div class="container">
+    <form id="quizForm">
+     <h2>Answer all 10 Questions</h2>
+
+<div class="question">
+  <p>1. What is the main goal of network security?</p>
+  <label><input type="radio" name="q1" value="Protect data and systems from threats"> Protect data and systems from threats</label>
+  <label><input type="radio" name="q1" value="Speed up the internet"> Speed up the internet</label>
+  <label><input type="radio" name="q1" value="Increase storage space"> Increase storage space</label>
+</div>
+
+<div class="question">
+  <p>2. What does a firewall do?</p>
+  <label><input type="radio" name="q2" value="Blocks unauthorized access"> Blocks unauthorized access</label>
+  <label><input type="radio" name="q2" value="Stores files"> Stores files</label>
+  <label><input type="radio" name="q2" value="Creates backups"> Creates backups</label>
+</div>
+
+<div class="question">
+  <p>3. What does VPN stand for?</p>
+  <label><input type="radio" name="q3" value="Virtual Private Network"> Virtual Private Network</label>
+  <label><input type="radio" name="q3" value="Verified Public Network"> Verified Public Network</label>
+  <label><input type="radio" name="q3" value="Virtual Protected Node"> Virtual Protected Node</label>
+</div>
+
+<div class="question">
+  <p>4. Which is an example of malware?</p>
+  <label><input type="radio" name="q4" value="Virus"> Virus</label>
+  <label><input type="radio" name="q4" value="Firewall"> Firewall</label>
+  <label><input type="radio" name="q4" value="Router"> Router</label>
+</div>
+
+<div class="question">
+  <p>5. What is encryption used for?</p>
+  <label><input type="radio" name="q5" value="To secure data by converting it into unreadable form"> To secure data by converting it into unreadable form</label>
+  <label><input type="radio" name="q5" value="To delete data"> To delete data</label>
+  <label><input type="radio" name="q5" value="To duplicate data"> To duplicate data</label>
+</div>
+
+<div class="question">
+  <p>6. What is phishing?</p>
+  <label><input type="radio" name="q6" value="A cyber-attack tricking users to give sensitive info"> A cyber-attack tricking users to give sensitive info</label>
+  <label><input type="radio" name="q6" value="Installing antivirus"> Installing antivirus</label>
+  <label><input type="radio" name="q6" value="Network speed testing"> Network speed testing</label>
+</div>
+
+<div class="question">
+  <p>7. Which protocol is secure for web browsing?</p>
+  <label><input type="radio" name="q7" value="HTTPS"> HTTPS</label>
+  <label><input type="radio" name="q7" value="HTTP"> HTTP</label>
+  <label><input type="radio" name="q7" value="FTP"> FTP</label>
+</div>
+
+<div class="question">
+  <p>8. What does IDS stand for?</p>
+  <label><input type="radio" name="q8" value="Intrusion Detection System"> Intrusion Detection System</label>
+  <label><input type="radio" name="q8" value="Internal Data Storage"> Internal Data Storage</label>
+  <label><input type="radio" name="q8" value="Internet Domain Service"> Internet Domain Service</label>
+</div>
+
+<div class="question">
+  <p>9. Which of these is a strong password example?</p>
+  <label><input type="radio" name="q9" value="P@ssw0rd!23"> P@ssw0rd!23</label>
+  <label><input type="radio" name="q9" value="123456"> 123456</label>
+  <label><input type="radio" name="q9" value="password"> password</label>
+</div>
+
+<div class="question">
+  <p>10. What is two-factor authentication (2FA)?</p>
+  <label><input type="radio" name="q10" value="An extra security step requiring two forms of verification"> An extra security step requiring two forms of verification</label>
+  <label><input type="radio" name="q10" value="A type of firewall"> A type of firewall</label>
+  <label><input type="radio" name="q10" value="A backup system"> A backup system</label>
+</div>
+
+<button type="submit">Submit Answers</button>
+</form>
+
+    <div id="result" class="success"></div>
+      
+
+    <!-- Next Page Button -->
+              
+  </div>
+
+  <script>
+    const form = document.getElementById("quizForm");
+    const resultDiv = document.getElementById("result");
+
+    form.addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      // Collect responses
+      const formData = new FormData(form);
+      const responses = {};
+      formData.forEach((value, key) => {
+        responses[key] = value;
+      });
+
+      // ✅ Send to Google Sheets (replace YOUR_SCRIPT_URL)
+      fetch("YOUR_GOOGLE_APPS_SCRIPT_URL", {
+        method: "POST",
+        body: JSON.stringify(responses)
+      })
+      .then(res => {
+        resultDiv.innerText = "✅ Your answers have been submitted!";
+        form.reset();
+      })
+      .catch(err => {
+        resultDiv.innerText = "❌ Error submitting answers. Try again.";
+      });
+    });
+  </script>
+
+          <span class="mission-status">
+  <a href="certificate.html" class="btn" style=" color:rgb(211, 145, 3); padding:10px 20px; border-radius:8px; text-decoration:none;">Get Certificate</a>
+</span>
+<br>  
+         
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Vytek Academy. All rights reserved. </a></p>
+        </div>
+    </footer>
+<script src="tooplate-stellaris-script.js"></script>
+</body>
+</html>

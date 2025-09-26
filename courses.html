@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NETWORK COMPUTING</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="tooplate-stellaris-style.css" rel="stylesheet">
+    
+<!--
+
+Tooplate 2140 Stellaris Research
+
+https://www.tooplate.com/view/2140-stellaris-research
+
+Free HTML CSS Template
+
+-->
+<style>
+/* Course Section */
+    .course-list {
+      padding: 40px 10%;
+    }
+
+    .course-item {
+      display: flex;
+      align-items: flex-start;
+      background: #000000;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(26, 233, 85, 0.748);
+      margin-bottom: 25px;
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+
+    .course-item:hover {
+      transform: translateY(-4px);
+    }
+
+    .course-item img {
+      width: 220px;
+      height: 140px;
+      object-fit: cover;
+      cursor: pointer;
+    }
+
+    .course-content {
+      padding: 15px;
+      flex: 1;
+    }
+
+    .course-content h2 {
+      font-size: 1.2rem;
+      color: #f9f9f9;
+      margin-bottom: 8px;
+    }
+
+    .course-content p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: #cecbcb;
+    }
+</style>
+</head>
+<body>
+    <canvas id="starfield"></canvas>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo-container">
+                <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Cosmic logo with planet and orbit -->
+                    <circle cx="50" cy="50" r="35" fill="none" stroke="#8b5cf6" stroke-width="1.5" opacity="0.6"/>
+                    <circle cx="50" cy="50" r="20" fill="none" stroke="#f59e0b" stroke-width="2"/>
+                    <circle cx="50" cy="50" r="12" fill="#7c3aed"/>
+                    
+                    <!-- Orbiting elements -->
+                    <circle cx="85" cy="50" r="4" fill="#f59e0b">
+                        <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 50 50" to="360 50 50" dur="8s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle cx="15" cy="50" r="3" fill="#ec4899">
+                        <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 50 50" to="-360 50 50" dur="12s" repeatCount="indefinite"/>
+                    </circle>
+                    
+                    <!-- Central glow -->
+                    <circle cx="50" cy="50" r="8" fill="#f59e0b" opacity="0.3"/>
+                </svg>
+                <span class="logo-text">VYTEK ACADEMY</span>
+            </a>
+            
+            <div class="mobile-menu-toggle" id="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+                    <li><a href="quizz.html">TEST YOUR SKILL</a></li>
+                  
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+    <!-- Star layers -->
+    <div class="stars-layer"></div>
+    
+    <!-- Floating space orbs -->
+    <div class="space-orb"></div>
+    <div class="space-orb"></div>
+    <div class="space-orb"></div>
+    <div class="space-orb"></div>
+    
+    <!-- Shooting stars -->
+    <div class="shooting-star" style="--delay: 0s; --top: 10%; --left: 10%;"></div>
+    <div class="shooting-star" style="--delay: 1.5s; --top: 30%; --left: 60%;"></div>
+    <div class="shooting-star" style="--delay: 3s; --top: 20%; --left: 80%;"></div>
+    <div class="shooting-star" style="--delay: 4.5s; --top: 60%; --left: 30%;"></div>
+    <div class="shooting-star" style="--delay: 6s; --top: 80%; --left: 70%;"></div>
+    
+        <div class="hero-content">
+            <h1 class="cosmic-title">NETWORK COMPUTING
+        </div>
+        <a href="#courses" class="scroll-btn">
+            <div class="scroll-btn-inner">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+                </svg>
+            </div>
+        </a>
+    </section>
+
+    
+
+
+    <section id="missions" class="missions-section fade-in">
+        <div class="missions-container">
+            <h2 class="section-title">Our Courses</h2>
+            
+            <div class="mission-tabs">
+                <button class="mission-tab active" data-tab="dm">NETWORK COMPUTING</button>
+                
+            </div>
+            
+          <!-- Day 1 -->
+<div class="course-item">
+  <a href="https://drive.google.com/file/d/1Ic3AkIkenMN4PdU4YCnzcMgwsvw0wKQE/view?usp=drive_link" target="_blank">
+    <img src="img/CN1.jpg" alt="Day 1">
+  </a>
+  <div class="course-content">
+    <h2>Day 1: INTRODUCTION TO NETWORK SECURITY</h2>
+    <p>An overview of Network Security fundamentals, emphasizing the need to protect Confidentiality, Integrity, and Availability (CIA) of information.</p>
+  </div>
+</div>
+
+<!-- Day 2 -->
+<div class="course-item">
+  <a href="https://drive.google.com/file/d/1vfrBDFf40yNny4YyfTxyeiNqeFHPDInW/view?usp=drive_link" target="_blank">
+    <img src="img/CN2.jpg" alt="Day 2">
+  </a>
+  <div class="course-content">
+    <h2>Day 2: NETWORK FUNDAMENTALS</h2>
+    <p>Covers the core networking concepts including Internet Protocol (IP) addressing, ports, protocols, Open Systems Interconnection (OSI) and Transmission Control Protocol/Internet Protocol (TCP/IP) models, and data packet flow.</p>
+  </div>
+</div>
+
+<!-- Day 3 -->
+<div class="course-item">
+  <a href="https://drive.google.com/file/d/1z5ZRAAgnWisY-vzKgW9f-4p8gbDQYPa_/view?usp=drive_link" target="_blank">
+    <img src="img/CN3.jpg" alt="Day 3">
+  </a>
+  <div class="course-content">
+    <h2>Day 3: LINUX BASICS</h2>
+    <p>Introduces essential Linux commands, file system permissions, and networking utilities relevant for system administration and security tasks.</p>
+  </div>
+</div>
+
+<!-- Day 4 -->
+<div class="course-item">
+  <a href="https://drive.google.com/file/d/1R31beuaV8gClFgFLDbGSaiWEtWVQxwPL/view?usp=drive_link" target="_blank">
+    <img src="img/CN4.jpg" alt="Day 4">
+  </a>
+  <div class="course-content">
+    <h2>Day 4: FOOTPRINTING AND SCANNING</h2>
+    <p>Explains how attackers collect target information through footprinting, and how scanning tools are used to identify system vulnerabilities.</p>
+  </div>
+</div>
+
+<!-- Day 5 -->
+<div class="course-item">
+  <a href="https://drive.google.com/file/d/1gl1rMJF950ZW2SNRKzPZ03X57DviEFPH/view?usp=drive_link" target="_blank">
+    <img src="img/CN5.jpg" alt="Day 5">
+  </a>
+  <div class="course-content">
+    <h2>Day 5: VULNERABILITY ASSESSMENT</h2>
+    <p>This module teaches methods to detect, analyze, and prioritize system weaknesses to prevent exploitation.</p>
+  </div>
+</div>
+
+<!-- Day 6 -->
+<div class="course-item">
+  <a href="https://drive.google.com/file/d/1zX-BWqGm_H8hEoDgHXv_2thEURbIwXwV/view?usp=drive_link" target="_blank">
+    <img src="img/CN6.jpg" alt="Day 6">
+  </a>
+  <div class="course-content">
+    <h2>Day 6: FIREWALL, INTRUSION DETECTION SYSTEM (IDS), INTRUSION PREVENTION SYSTEM (IPS) AND NETWORK DEFENSE</h2>
+    <p>Covers key defense mechanisms including Firewalls, Intrusion Detection Systems (IDS), and Intrusion Prevention Systems (IPS) to protect against cyberattacks.</p>
+  </div>
+</div>
+
+<!-- Day 7 -->
+<div class="course-item">
+  <a href="https://drive.google.com/file/d/1lHYS6E6iwE2BxWh1abdO_egHfsKArI6q/view?usp=drive_link" target="_blank">
+    <img src="img/CN7.jpg" alt="Day 7">
+  </a>
+  <div class="course-content">
+    <h2>MINI PROJECT (NETWORK SECURITY)</h2>
+    <p>A practical exercise involving penetration testing or network defense configuration to apply learned security concepts.</p>
+  </div>
+</div>
+
+
+          <span class="mission-status">
+  <a href="quizz.html" class="btn" style=" color:rgb(211, 145, 3); padding:10px 20px; border-radius:8px; text-decoration:none;">Test Your Knowledge</a>
+</span>
+<br>  
+         
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Vytek Academy. All rights reserved. </a></p>
+        </div>
+    </footer>
+<script src="tooplate-stellaris-script.js"></script>
+</body>
+</html>
